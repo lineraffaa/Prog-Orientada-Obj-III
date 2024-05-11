@@ -4,18 +4,12 @@ import VehicleType from "../componentes/VehicleType";
 import Wheel from "../componentes/Wheel";
 
 export default class Vehicle {
-  
-  
-  
-    private _vehicleType: VehicleType;
-
- 
+  private _vehicleType: VehicleType;
 
   private _transmission: Transmission;
 
   private _seats: number;
-  private _engine: Engine; 
-   
+  private _engine: Engine;
 
   private _wheels: Wheel[] = [];
 
@@ -55,12 +49,10 @@ export default class Vehicle {
   }
   public get engine(): Engine {
     return this._engine;
-}
-public set engine(value: Engine) {
+  }
+  public set engine(value: Engine) {
     this._engine = value;
-}
-
-  
+  }
 
   public addWheel(wheel: Wheel) {
     this.wheels.push(wheel);
