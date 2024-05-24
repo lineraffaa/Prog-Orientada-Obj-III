@@ -4,12 +4,13 @@ export default class Xbox implements IConsole{
    
     constructor(){
         this.configure();
-        console.log("Xbox Configurado ");
+        console.log("Xbox ligando ");
     }
   
    
     configure(): void {
-        console.log("Xbox ");
+        this.authToken();
+        console.log("Xbox iniciando");
     }
     authToken(): void {
         console.log("Xbox Autorizado");

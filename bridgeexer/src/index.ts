@@ -4,20 +4,22 @@ import PlayStation from "./consoles/PlayStation";
 import Xbox from "./consoles/Xbox";
 import { IConsole } from "./consoles/interface/IConsole";
 
-function Start(console: IConsole) {
-  const play = new Play(console);
+function Start(consoles: IConsole) {
+  const play = new Play(consoles);
+  console.log("Aguarde..");
   play.playing();
   play.result();
 }
 Start(new PlayStation());
 Start(new Xbox());
 
-function Advance(console: IConsole) {
-  const play = new AdvancePlay(console);
-
+function Advance(consoles: IConsole) {
+  const play = new AdvancePlay(consoles);
+  console.log("Aguarde..");
   play.challenge();
   play.result();
   play.playing();
+  console.log(".......");
 }
 
 Advance(new PlayStation());

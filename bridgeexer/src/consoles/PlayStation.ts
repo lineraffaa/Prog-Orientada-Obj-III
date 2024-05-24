@@ -4,12 +4,13 @@ export default class PlayStation implements IConsole{
     
     constructor(){
         this.configure();
-        console.log("PlayStation Configurado ");
+        console.log("PlayStation Ligando ");
     }
    
     
     configure(): void {
-        console.log("PlayStation");
+        this.authToken();
+        console.log("PlayStation iniciando");
     }
     authToken(): void {
         console.log("PlayStation Autorizado");

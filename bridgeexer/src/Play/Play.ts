@@ -9,7 +9,7 @@ export default class Play implements IPlay{
     }
 
     playing(): void {
-        console.log("Iniciando");
+        console.log("jogando");
     }
     result(): void {
         console.log("Pronto");
